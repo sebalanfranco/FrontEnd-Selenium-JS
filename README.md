@@ -12,8 +12,9 @@ CucumberJS + Selenium implementation to a test a Web app.
 ## Exectute test cases
 - Run all test cases `npm test`.
 - Run Smoke test suite `npm test -- -t @smoke`.
+- Run Sanity test suite `npm test -- -t @sanity`.
 - Run Regression test suite `npm test -- -t @regression`.
 
 ## Improvements TODO
+- Implement TODO steps.
 - Implement reports.
-- Implement page object.
