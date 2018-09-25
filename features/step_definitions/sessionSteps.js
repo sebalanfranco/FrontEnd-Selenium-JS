@@ -1,7 +1,9 @@
-const { When } = require('cucumber')
-const BasePage = require('../pages/BasePage')
+const { When, After } = require('cucumber')
 
 When(/^User goes to page "(.*)"$/, async function(pageUrl) {
-    basePage = new BasePage(this)
-    await basePage.goTo(pageUrl)
+    await this.driver.get(pageUrl)
+})
+
+After(function(pageUrl) {
+    this.driver.close()
 })
